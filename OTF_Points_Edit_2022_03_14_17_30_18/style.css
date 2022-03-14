@@ -1,0 +1,17 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 500%;
+}
+
+canvas {
+  display: block;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 200px;
+}
+
