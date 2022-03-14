@@ -1,4 +1,4 @@
-let font; // opentype.js font object
+let font; // opentype.js font object 
 
 let fSize = "100"; // default font size
 let tPos = { x: 0, y: 0 };
@@ -29,7 +29,7 @@ function draw() {
   stroke(3);
   stroke(255, 0, 255);
   
-  font.drawPoints(canvas, msg, tPos.x, tPos.y, fSize, true)
+  //font.drawPoints(canvas, msg, tPos.x, tPos.y, fSize, true)
 
   //vectorDraw();
   //noLoop();
@@ -61,6 +61,7 @@ function openTypeLoad() {
       let y = tPos.y;
       path = font.getPath(msg, x, y, fSize);
       console.log(path.commands);
+      const ctx = document.getElementById('canvas').getContext('2d');
     }
   });
 }
